@@ -13,7 +13,6 @@ print("2     intermedio   ")
 print("3      avanzado   ")
 opc = int(input())
 matriz=[]
-opc 2 = 
 if(opc==1):
   print("principiante")
   matriz=crearmatriz(9)
