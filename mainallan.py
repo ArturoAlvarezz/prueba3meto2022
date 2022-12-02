@@ -1,20 +1,24 @@
-fila=5
+fila=8
 columna=8
 
-a=""
+
 
 t = []
 for i in range(fila):
   t.append([0] * columna)
+def imprimirmatriz(tamano):
+  a=""
+  for k in range(tamano):
 
-for k in range(fila):
-
-    for j in range(columna):
-
-       # print(m[k][j])
-
-        a+=str(t[k][j])+'\t'
+    for j in range(tamano):
+      a+=str(t[k][j])+'\t'
 
     print (a)
 
     a=""
+def desbloquearcasilla():
+  x=int(input("ingrese la coordenada x: "))
+  y=int(input("ingrese la coordenada y: "))
+  t[x][y]=1
+desbloquearcasilla()
+imprimirmatriz(8)
